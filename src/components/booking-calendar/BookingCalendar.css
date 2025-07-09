@@ -1,0 +1,160 @@
+@layer components {
+  .BookingCalendar {
+    @apply
+      w-full
+      mx-auto;
+  }
+
+  .BookingCalendar-header {
+    @apply
+      mb-4;
+  }
+
+  .BookingCalendar-title {
+    @apply
+      text-center
+      text-xl
+      font-semibold
+      text-gray-800;
+  }
+
+  .BookingCalendar-placeholder {
+    @apply
+      text-center
+      text-gray-500
+      italic;
+  }
+
+  .BookingCalendar-controls {
+    @apply
+      flex
+      justify-between
+      mb-4;
+  }
+
+  .BookingCalendar-control {
+    @apply
+      px-4
+      py-2
+      bg-blue-500
+      text-white
+      rounded-md
+      cursor-pointer
+      hover:bg-blue-600;
+  }
+
+  .BookingCalendar-control--prev {
+    @apply
+      mr-2;
+  }
+
+  .BookingCalendar-control--next {
+    @apply
+      ml-2;
+  }
+
+  .BookingCalendar-grid {
+    @apply
+      mb-8
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      md:grid-cols-3
+      lg:grid-cols-7
+      gap-4;
+  }
+
+  .BookingCalendar-day {
+    @apply
+      bg-white
+      relative
+      overflow-hidden
+      border
+      border-gray-200
+      rounded-lg
+      shadow-sm
+      hover:shadow-md
+      transition-shadow
+      p-4
+      pt-7
+      flex
+      flex-col;
+  }
+
+  .BookingCalendar-day--today {
+    @apply
+      border-blue-500
+      bg-blue-50;
+  }
+
+  .BookingCalendar-tag {
+    @apply
+      absolute
+      bg-blue-200
+      text-xs
+      top-0
+      right-0
+      left-0
+      px-4
+      py-1
+      text-center;
+  }
+
+  .BookingCalendar-date {
+    @apply
+      text-sm
+      font-bold
+      mb-2
+      text-gray-800
+      pb-2
+      border-b
+      border-gray-200
+      m-0;
+  }
+
+  .BookingCalendar-bookings {
+    @apply
+      mt-2
+      flex-grow;
+  }
+
+  .BookingCalendar-booking {
+    @apply
+      cursor-pointer
+      flex
+      flex-col
+      text-left
+      w-full
+      py-1
+      px-2
+      mb-2
+      bg-gray-100
+      rounded
+      text-sm
+      text-gray-700
+      border-l-4;
+  }
+
+  .BookingCalendar-booking--pickup {
+    @apply
+      border-green-500;
+  }
+
+  .BookingCalendar-booking--dropoff {
+    @apply
+      border-blue-500;
+  }
+
+  .BookingCalendar-type {
+    @apply
+      text-xs
+      text-gray-400;
+  }
+
+  .BookingCalendar-disclaimer {
+    @apply
+      text-xs
+      text-gray-400
+      p-4;
+  }
+}
