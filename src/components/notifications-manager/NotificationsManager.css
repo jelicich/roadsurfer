@@ -1,0 +1,65 @@
+@layer components {
+  .NotificationManager {
+    @apply
+      w-full
+      max-w-md
+      fixed
+      top-5
+      right-5
+      z-50;
+  }
+
+  .NotificationManager-list {
+    @apply
+      flex
+      flex-col
+      gap-2
+      list-none
+      p-0
+      m-0;
+  }
+
+  .NotificationManager-item {
+    @apply
+      flex
+      items-center
+      justify-between
+      bg-white
+      border
+      border-gray-300
+      rounded-md
+      shadow-sm
+      p-3
+      transition-all
+      duration-300
+      hover:shadow-md;
+  }
+
+  .NotificationManager-text {
+    @apply
+      text-gray-700
+      text-sm
+      font-medium
+      mr-4
+      flex-1;
+  }
+
+  .NotificationManager-item button {
+    @apply
+      cursor-pointer
+      w-6
+      h-6
+      flex
+      items-center
+      justify-center
+      text-gray-400
+      hover:text-gray-600
+      transition-colors
+      rounded-full
+      bg-gray-100
+      hover:bg-gray-200
+      focus:outline-none
+      focus:ring-2
+      focus:ring-blue-500;
+  }
+}

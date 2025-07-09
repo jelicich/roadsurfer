@@ -1,0 +1,19 @@
+@layer components {
+  .BookingDashboard {
+    @apply
+      w-full
+      max-w-7xl
+      mx-auto
+      relative
+      pt-8
+      px-4;
+  }
+
+  .BookingDashboard-title {
+    @apply
+      text-2xl
+      text-center
+      mb-10
+      font-bold;
+  }
+}

@@ -1,0 +1,98 @@
+@layer components {
+  .ModalWindow {
+    @apply
+      fixed
+      inset-0
+      z-50
+      flex
+      justify-end
+      shadow-2xl;
+  }
+
+  .ModalWindow-container {
+    @apply
+      w-full
+      md:w-1/2
+      h-screen
+      bg-white
+      flex
+      flex-col
+      shadow-xl
+      transform
+      transition-transform
+      duration-300
+      ease-in-out;
+  }
+
+  .ModalWindow-header {
+    @apply
+      flex
+      justify-between
+      items-center
+      px-6
+      py-4
+      border-b
+      border-gray-200;
+  }
+
+  .ModalWindow-header h3 {
+    @apply
+      text-lg
+      font-medium
+      text-gray-900;
+  }
+
+  .ModalWindow-close {
+    @apply
+      cursor-pointer
+      text-gray-400
+      hover:text-gray-500
+      focus:outline-none
+      text-2xl;
+  }
+
+  .ModalWindow-body {
+    @apply
+      flex-grow
+      p-6
+      overflow-y-auto;
+  }
+
+  .ModalWindow-footer {
+    @apply
+      px-6
+      py-4
+      border-t
+      border-gray-200
+      flex
+      justify-end
+      space-x-3;
+  }
+
+  .ModalWindow.is-enter-active,
+  .ModalWindow.is-leave-active {
+    @apply
+      transition-all
+      duration-300
+      ease-in-out;
+  }
+
+  .ModalWindow.is-enter .ModalWindow-container,
+  .ModalWindow.is-leave-to .ModalWindow-container {
+    @apply
+      transform
+      translate-x-full;
+  }
+
+  .ModalWindow.is-enter-to .ModalWindow-container,
+  .ModalWindow.is-leave .ModalWindow-container {
+    @apply
+      transform
+      translate-x-0;
+  }
+
+  .has-modal {
+    @apply
+      overflow-hidden;
+  }
+}

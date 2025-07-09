@@ -1,0 +1,6 @@
+/* src/styles/components.css */
+@import "../components/autocomplete-field/AutocompleteField.css";
+@import "../components/booking-calendar/BookingCalendar.css";
+@import "../components/modal-window/ModalWindow.css";
+@import "../components/booking-details/BookingDetails.css";
+@import "../components/notifications-manager/NotificationsManager.css";
