@@ -41,8 +41,8 @@
           v-if="selectedStation && selectedStation.bookings"
         >
           <button
-            v-for="booking in getBookingsForDay(day)"
-            :key="booking.id"
+            v-for="(booking, i) in getBookingsForDay(day)"
+            :key="`booking.id-${i}`"
             draggable="true"
             @dragstart="setDraggedBooking(booking)"
             :class="`BookingCalendar-booking BookingCalendar-booking--${booking.type}`"
